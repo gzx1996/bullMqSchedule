@@ -1,0 +1,33 @@
+{
+  "name": "bullmqschedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bullmq": "^1.54.4",
+    "check-types": "^11.1.2",
+    "config": "^3.3.6",
+    "ioredis": "^4.28.1",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzx1996/bullMqSchedule.git"
+  },
+  "keywords": [
+    "nodejs",
+    "schedule",
+    "bullmq"
+  ],
+  "author": "norman1996",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gzx1996/bullMqSchedule/issues"
+  },
+  "homepage": "https://github.com/gzx1996/bullMqSchedule#readme"
+}
