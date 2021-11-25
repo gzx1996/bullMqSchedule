@@ -2,6 +2,7 @@ module.exports = {
     redis: {
         host: 'your redis host',
         port: 'your redis port',
+        password: "your redis password"
         db: 0, // 可自定义
         maxRetriesPerRequest: null,
         enableReadyCheck: false
