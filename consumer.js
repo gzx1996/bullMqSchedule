@@ -6,7 +6,7 @@ const moment = require('moment');
 
 const JOBS = require('./jobs');
 
-const consumFn = async (job) => {
+const consumeFn = async (job) => {
     let t = JOBS.find(x => x.name === job.name)
     if (t) {
         logger.info(`========job: ${t.name}开始执行, 执行时间 ${moment().format('YYYY-MM-DD hh:mm:ss')}=======`)
@@ -16,7 +16,7 @@ const consumFn = async (job) => {
 
 module.exports = class JobConsumer {
     static async start() {
-        new Worker(JobQueueName, consumFn, {
+        new Worker(JobQueueName, consumeFn, {
             connection: redis
         });
     }
